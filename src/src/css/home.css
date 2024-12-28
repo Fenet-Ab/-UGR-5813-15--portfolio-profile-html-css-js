@@ -41,19 +41,24 @@ header {
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
-  float: left;
+  
 }
 #nav {
   
   display: flex;
- 
+ margin-left: 200px;
   width:660px; /* Ensures it spans the grid column */
   height: 58px;
 justify-content: center;
   align-content: flex-end;
 }
-
-
+body {
+  background: linear-gradient(
+    to right,
+    #F5EFEF  0 330px,
+    #E6CCE6 330px
+  );
+}
 
 
 nav ul {
@@ -133,7 +138,7 @@ main {
 
 .home-img img {
   max-width: 100%;
-  width: 300px;
+  width: 240px;
   border-radius: 8px;
   
 }
@@ -143,13 +148,14 @@ footer {
   grid-column: span 12;
   margin-top: 80px; /* Extra Large spacing */
   padding: 32px; /* Large spacing */
-  
+  display: flex;
   color:#1F001F;
+  margin-bottom: 80px;
 }
 
 footer h2 {
-  font-size: 32px; /* Heading 2 */
-  line-height: 40px; /* 1.25x ratio */
+  font-size: 24px; /* Heading 2 */
+  line-height: 32px; /* 1.25x ratio */
   margin-bottom: 24px; /* Medium spacing */
 }
 
