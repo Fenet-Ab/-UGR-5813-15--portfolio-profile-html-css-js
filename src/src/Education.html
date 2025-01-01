@@ -4,20 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education</title>
+    <link rel="stylesheet" href="./css/education.css" />
   </head>
   <body>
-    <section class="header">
+    <!--  
+    <div class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Cv.html">CV</a></li>
+          <li><a href="Adventure.html">Adventure</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  Sidebar Toggle for Tablets 
+    <div class="sidebar-toggle" id="sidebarToggle">☰</div>
+  -->
+    <div class="grid-container">
       <header>
-        <h2>Navigation</h2>
         <div class="head">
           <div class="logo">
-            <a href="#"><span>F</span>enet.A</a>
+            <a href="Home.html">Fenet.A</a>
           </div>
-          <div class="nav-toggler">
-            <span></span>
-          </div>
-          <div class="nav-bar" id="nav">
-            <nav>
+          <section class="nav-bar">
+            <nav id="nav">
               <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
@@ -26,127 +39,144 @@
                 <li><a href="Adventure.html">Adventure</a></li>
               </ul>
             </nav>
-          </div>
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger-menu" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </section>
         </div>
       </header>
-    </section>
+    </div>
 
-    <main>
-      <section class="education-timeline">
-        <h2>Academic Timeline</h2>
-        <div class="education_time">
+    <div class="grid-container">
+      <main>
+        <section class="education-timeline">
+          <div class="education_time">
+            <h2>Academic Timeline</h2>
+            <p>
+              2010–2020: Alidoro Muka Kule School, Oromia Region<br />
+              <em>Grades 1–11</em>
+            </p>
+            <p>
+              Developed a strong foundation in academics and consistently ranked
+              first in many classes.
+            </p>
+            <p>
+              2020–2021: Fitche Secondary School<br />
+              <em>Grade 12</em>
+            </p>
+            <p>
+              Successfully completed the Ethiopian National Higher Education
+              Entrance Examination with excellent performance.
+            </p>
+            <p>
+              2022–Present: Addis Ababa University<br />
+              <em>Bachelor of Science in Software Engineering</em>
+            </p>
+            <p>
+              Focused on innovative technologies, software development, and
+              real-world problem-solving.
+            </p>
+          </div>
+          <div class="section1_img">
+            <figure>
+              <img src="images/daily-working-space.png" alt="My room" />
+              <figcaption>My daily working space</figcaption>
+            </figure>
+          </div>
+        </section>
+        <div class="overview">
+          <h2>My Academic Journey</h2>
           <p>
-            <strong>2010–2020:</strong> Alidoro Muka Kule School, Oromia
-            Region<br />
-            <em>Grades 1–11</em>
-          </p>
-          <p>
-            Developed a strong foundation in academics and consistently ranked
-            first in many classes.
-          </p>
-
-          <p>
-            <strong>2020–2021:</strong> Fitche Secondary School<br />
-            <em>Grade 12</em>
-          </p>
-          <p>
-            Successfully completed the Ethiopian National Higher Education
-            Entrance Examination with excellent performance.
-          </p>
-
-          <p>
-            <strong>2022–Present:</strong> Addis Ababa University<br />
-            <em>Bachelor of Science in Software Engineering</em>
-          </p>
-          <p>
-            Focused on innovative technologies, software development, and
-            real-world problem-solving.
+            Education has been a cornerstone of my personal and professional
+            growth...
           </p>
         </div>
-        <div class="section1_img">
-          <figure>
-            <img src="images/daily-working-space.png" alt="My room" />
-            <figcaption>My daily working space</figcaption>
-          </figure>
+        <section class="video-intro">
+          <div class="my-video">
+            <div class="first-vid">
+              <figure>
+                <video
+                  controls
+                  autoplay
+                  src="videos/from-my-school-short.mp4"
+                ></video>
+                <figcaption>From my school life</figcaption>
+              </figure>
+            </div>
+            <div class="second-vid">
+              <figure>
+                <video
+                  controls
+                  autoplay
+                  src="videos/project-vid-veed.mp4"
+                ></video>
+                <figcaption>From my projects</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="grid-container">
+      <footer>
+        <div class="footer">
+          <div class="social-media">
+            <h2>Contact me</h2>
+            <a href="https://telegram.org/dl">
+              <img
+                class="social-icon"
+                src="images/icon/telegram.png"
+                alt="telegram"
+              />Telegram
+            </a>
+            <a href="https://whatsapp.com/dl/">
+              <img
+                class="social-icon"
+                src="images/icon/WhatsApp.png"
+                alt="whatsapp"
+              />WhatsApp
+            </a>
+            <a href="https://www.linkedin.com/in/fenet-abilu-a52354307/">
+              <img
+                class="social-icon"
+                src="images/icon/linkedin.png"
+                alt="LinkedIn"
+              />LinkedIn
+            </a>
+          </div>
+          <div class="social-media" id="loc">
+            <div class="location">
+              <img src="images/icon/location.png" alt="location" />
+              <p>
+                Address <br />
+                Addis Ababa Ethiopia
+              </p>
+            </div>
+            <div class="location">
+              <img src="images/icon/phone.png" alt="phone" />
+              <p>
+                Phone <br />
+                +251911412529
+              </p>
+            </div>
+            <div class="location">
+              <img src="images/icon/enveloope.png" alt="email" />
+              <p>
+                Email <br />
+                abilufenet@gmail.com
+              </p>
+            </div>
+          </div>
         </div>
-      </section>
+        <p id="footerLast">&copy; 2024 Fenet Abilu. All Rights Reserved.</p>
+      </footer>
+    </div>
 
-      <section class="video-intro">
-        <h2>My Academic Journey</h2>
-        <p>
-          Education has been a cornerstone of my personal and professional
-          growth...
-        </p>
-
-        <div class="my-video">
-          <figure>
-            <video
-              controls
-              autoplay
-              src="videos/from-my-school-short.mp4"
-            ></video>
-            <figcaption>From my school life</figcaption>
-          </figure>
-
-          <figure>
-            <video controls autoplay src="videos/project-vid-veed.mp4"></video>
-            <figcaption>From my projects</figcaption>
-          </figure>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <h2>Contact Information</h2>
-      <div class="location">
-        <img src="images/icon/lo.jpeg" alt="" />
-        <h3>Address</h3>
-        <p>
-          Addis Ababa <br />
-          Ethiopia
-        </p>
-      </div>
-      <div class="icon">
-        <img src="images/icon/phone.png" alt="" />
-      </div>
-      <div class="location">
-        <h3>Phone</h3>
-        <p>+251911412529</p>
-      </div>
-      <div class="icon">
-        <img src="images/icon/envloope.jpg" alt="" />
-      </div>
-      <div class="location">
-        <h3>Email</h3>
-        <p>abilufenet@gmail.com</p>
-      </div>
-      <form action="text">
-        <label for="name">Full Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your name"
-          required
-        />
-        <label for="email">Email Address:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email"
-          required
-        />
-        <label for="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          placeholder="Enter your message"
-        ></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      <p>&copy; 2024 Fenet Abilu. All Rights Reserved.</p>
-    </footer>
+    <!-- JavaScript -->
+    <script src="./js/education.js"></script>
   </body>
 </html>

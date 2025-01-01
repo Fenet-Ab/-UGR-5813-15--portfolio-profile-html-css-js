@@ -4,20 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adventure</title>
+    <link rel="stylesheet" href="./css/adventure.css" />
   </head>
   <body>
-    <section class="header">
+    <!-- Sidebar for Tablets (Landscape) 
+    <div class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Cv.html">CV</a></li>
+          <li><a href="Adventure.html">Adventure</a></li>
+        </ul>
+      </nav>
+    </div>
+
+   Sidebar Toggle for Tablets 
+    <div class="sidebar-toggle" id="sidebarToggle">☰</div> -->
+
+    <div class="grid-container">
       <header>
-        <h2 class="visually-hidden">Navigation Bar</h2>
         <div class="head">
           <div class="logo">
-            <a href="#"><span>F</span>enet.A</a>
+            <a href="Home.html">Fenet.A</a>
           </div>
-          <div class="nav-toggler">
-            <span></span>
-          </div>
-          <div class="nav-bar" id="nav">
-            <nav>
+          <section class="nav-bar">
+            <nav id="nav">
               <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
@@ -26,98 +39,112 @@
                 <li><a href="Adventure.html">Adventure</a></li>
               </ul>
             </nav>
-          </div>
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger-menu" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </section>
         </div>
       </header>
-    </section>
+    </div>
+    <div class="grid-container">
+      <main>
+        <div class="adventure">
+          <h1>Adventures That Inspire Me</h1>
+          <p>
+            For me, adventures are more than just journeys; they are
+            opportunities to learn, connect, and grow. Whether I’m enjoying the
+            beauty of nature or engaging with my community, each adventure
+            shapes my perspective and drives my passion for making a difference.
+          </p>
+        </div>
 
-    <main>
-      <section class="adventure">
-        <h1>Adventures That Inspire Me</h1>
-        <p>
-          For me, adventures are more than just journeys; they are opportunities
-          to learn, connect, and grow. Whether I’m enjoying the beauty of nature
-          or engaging with my community, each adventure shapes my perspective
-          and drives my passion for making a difference.
-        </p>
-      </section>
+        <div class="my-nature">
+          <audio controls src="audio/hope.mp3"></audio>
+          <figure>
+            <img src="images/nature.jpg" alt="Nature image" />
+            <figcaption>Enjoy nature!</figcaption>
+          </figure>
+        </div>
 
-      <section class="my-nature">
-        <h2>My Nature Adventures</h2>
-        <audio controls src="audio/hope.mp3"></audio>
-        <figure>
-          <img src="images/nature.jpg" alt="Nature image" />
-          <figcaption>Enjoy nature!</figcaption>
-        </figure>
-      </section>
+        <div class="my-journey">
+          <div class="video-container1">
+          <figure>
+            <video
+              controls
+              autoplay
+              src="videos/little-from-journey.mp4"
+            ></video>
+            <figcaption>Religious journey</figcaption>
+          </div>
+          <div class="video-container2">
+          </figure>
+          <figure>
+            <video controls autoplay src="videos/GDG-AAU.mp4"></video>
+            <figcaption>GDG AAU Telegram Chat-Bot Event</figcaption>
+          </figure>
+        </div>
+        </div>
+      </main>
+    </div>
+    <div class="grid-container">
+      <footer>
+        <div class="footer">
+          <div class="social-media">
+            <h2>Contact me</h2>
+            <a href="https://telegram.org/dl">
+              <img
+                class="social-icon"
+                src="images/icon/telegram.png"
+                alt="telegram"
+              />Telegram
+            </a>
+            <a href="https://whatsapp.com/dl/">
+              <img
+                class="social-icon"
+                src="images/icon/WhatsApp.png"
+                alt="whatsapp"
+              />WhatsApp
+            </a>
+            <a href="https://www.linkedin.com/in/fenet-abilu-a52354307/">
+              <img
+                class="social-icon"
+                src="images/icon/linkedin.png"
+                alt="LinkedIn"
+              />LinkedIn
+            </a>
+          </div>
+          <div class="social-media" id="loc">
+            <div class="location">
+              <img src="images/icon/location.png" alt="location" />
+              <p>
+                Address <br />
+                Addis Ababa Ethiopia
+              </p>
+            </div>
+            <div class="location">
+              <img src="images/icon/phone.png" alt="phone" />
+              <p>
+                Phone <br />
+                +251911412529
+              </p>
+            </div>
+            <div class="location">
+              <img src="images/icon/enveloope.png" alt="email" />
+              <p>
+                Email <br />
+                abilufenet@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <p id="footerLast">&copy; 2024 Fenet Abilu. All Rights Reserved.</p>
+      </footer>
+    </div>
 
-      <section class="my-journey">
-        <h2>My Journey Videos</h2>
-        <figure>
-          <video controls autoplay src="videos/little-from-journey.mp4"></video>
-          <figcaption>Religious journey</figcaption>
-        </figure>
-        <figure>
-          <video controls autoplay src="videos/GDG-AAU.mp4"></video>
-          <figcaption>GDG AAU Telegram Chat-Bot Event</figcaption>
-        </figure>
-        <figure>
-          <video controls autoplay src="videos/farm-land.mp4"></video>
-          <figcaption>Ethiopia Oromia Region</figcaption>
-        </figure>
-      </section>
-    </main>
-    <footer class="footer">
-      <h2>Contact Information</h2>
-      <div class="location">
-        <img src="images/icon/lo.jpeg" alt="" />
-        <h3>Address</h3>
-        <p>
-          Addis Ababa <br />
-          Ethiopia
-        </p>
-      </div>
-      <div class="icon">
-        <img src="images/icon/phone.png" alt="" />
-      </div>
-      <div class="location">
-        <h3>Phone</h3>
-        <p>+251911412529</p>
-      </div>
-      <div class="icon">
-        <img src="images/icon/envloope.jpg" alt="" />
-      </div>
-      <div class="location">
-        <h3>Email</h3>
-        <p>abilufenet@gmail.com</p>
-      </div>
-      <form action="text">
-        <label for="name">Full Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your name"
-          required
-        />
-        <label for="email">Email Address:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email"
-          required
-        />
-        <label for="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          placeholder="Enter your message"
-        ></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      <p>&copy; 2024 Fenet Abilu. All Rights Reserved.</p>
-    </footer>
+    <!-- JavaScript -->
+    <script src="./js/education.js"></script>
   </body>
 </html>
