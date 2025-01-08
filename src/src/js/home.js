@@ -12,7 +12,7 @@ menuList.style.maxHeight = "0px";
 
 function toggleMenu() {
   if (menuList.style.maxHeight === "0px") {
-    menuList.style.maxHeight = "420px"; // Expand the menu
+    menuList.style.maxHeight = "300px"; // Expand the menu
   } else {
     menuList.style.maxHeight = "0px"; // Collapse the menu
   }

@@ -7,31 +7,27 @@
     <link rel="stylesheet" href="./css/about.css" />
   </head>
   <body>
-    <div class="grid-container">
-      <section class="header">
-        <header>
-          <div class="head">
-            <div class="logo">
-              <a href="#"><span>F</span>enet.A</a>
-            </div>
-            <div class="nav-toggler">
-              <span></span>
-            </div>
-            <div class="nav-bar" id="nav">
-              <nav>
-                <ul>
-                  <li><a href="Home.html">Home</a></li>
-                  <li><a href="About.html">About</a></li>
-                  <li><a href="Education.html">Education</a></li>
-                  <li><a href="Cv.html">CV</a></li>
-                  <li><a href="Adventure.html">Adventure</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </header>
-      </section>
-    </div>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Fenet.A</h1>
+        </div>
+        <h1 class="phone">About</h1>
+
+        <div class="content">
+          <ul id="menuList">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Cv.html">CV</a></li>
+            <li><a href="Adventure.html">Adventure</a></li>
+          </ul>
+        </div>
+        <div class="menu-icon">
+          <img onclick="toggleMenu()" src="./images/icon/uil_bars.png" alt="" />
+        </div>
+      </nav>
+    </header>
     <div class="grid-container">
       <main>
         <div class="home_information">
@@ -73,6 +69,9 @@
 
         <div class="about-img">
           <img src="images/home-page-img.jpg" alt="fenet" />
+        </div>
+        <div class="phone-img">
+          <img src="./images/about-page-image.jpg" alt="" />
         </div>
       </main>
     </div>
