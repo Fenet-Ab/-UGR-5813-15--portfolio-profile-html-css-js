@@ -47,9 +47,11 @@
   
   nav ul li {
     list-style-type: none;
+    
   }
   
   nav ul li a {
+    
     line-height: 24px;
     text-align: center;
     color: #970097;
@@ -61,13 +63,13 @@
     border-radius: 8px;
   }
   nav ul li a:hover {
-    width: 100px;
+    /* width: 100px; */
     background-color: #1F001F;
     color: #fff;
   }
   
   nav ul li a:active {
-    width: 100px;
+    /* width: 100px; */
     background-color: #C184C1;
     color: #970097;
   }
@@ -275,8 +277,9 @@
             padding: 16px;
           }
         
-          nav ul li a {
-            color: #1F001F;
+         
+          nav ul li a:active{
+            width: 0px;
           }
         .logo {
             font-size: 16px;
