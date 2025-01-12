@@ -12,16 +12,16 @@ menuList.style.maxHeight = "0px";
 
 function toggleMenu() {
   if (menuList.style.maxHeight === "0px") {
-    menuList.style.maxHeight = "420px"; // Expand the menu
+    menuList.style.maxHeight = "420px"; 
   } else {
-    menuList.style.maxHeight = "0px"; // Collapse the menu
+    menuList.style.maxHeight = "0px"; 
   }
 }
 
-// Close the menu when a navigation link is clicked
+
 const navLinks = document.querySelectorAll("#menuList li a");
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    menuList.style.maxHeight = "0px"; // Collapse the menu
+    menuList.style.maxHeight = "0px"; 
   });
 });
