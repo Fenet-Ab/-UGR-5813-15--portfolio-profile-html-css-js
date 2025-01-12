@@ -1,19 +1,17 @@
-// Select the hidden content and the "See More" link
+
 const hiddenContent = document.querySelector('.hidden-content');
 const seeMoreLink = document.querySelector('.see-more-link');
-
-// Add a click event listener to the "See More" link
 seeMoreLink.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default action of the link
+    event.preventDefault(); 
     
     // Toggle the visibility of the hidden content
-    hiddenContent.classList.toggle('visible'); // Toggle the 'visible' class
+    hiddenContent.classList.toggle('visible'); 
     
     // Change the text of the link
     if (hiddenContent.classList.contains('visible')) {
-        seeMoreLink.textContent = 'See Less'; // Change to "See Less" when visible
+        seeMoreLink.textContent = 'See Less'; 
     } else {
-        seeMoreLink.textContent = 'See More'; // Change to "See More" when hidden
+        seeMoreLink.textContent = 'See More'; 
     }
 });
 let menuList = document.getElementById("menuList");
@@ -21,9 +19,9 @@ menuList.style.maxHeight = "0px";
 
 function toggleMenu() {
   if (menuList.style.maxHeight === "0px") {
-    menuList.style.maxHeight = "300px"; // Expand the menu
+    menuList.style.maxHeight = "300px"; 
   } else {
-    menuList.style.maxHeight = "0px"; // Collapse the menu
+    menuList.style.maxHeight = "0px"; 
   }
 }
 
@@ -31,13 +29,13 @@ function toggleMenu() {
 const navLinks = document.querySelectorAll("#menuList li a");
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent default navigation
-    const href = link.getAttribute("href"); // Get the link's target
-    menuList.style.maxHeight = "0px"; // Collapse the menu
+    e.preventDefault();
+    const href = link.getAttribute("href"); 
+    menuList.style.maxHeight = "0px";
 
     // Simulate navigation
     setTimeout(() => {
-      window.location.href = href; // Navigate to the target page
-    }, 300); // Delay for menu collapse animation
+      window.location.href = href; 
+    }, 300); 
   });
 });
